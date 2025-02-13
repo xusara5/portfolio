@@ -1,0 +1,24 @@
+
+/* style the nav bar to appear in a row at the top of page */
+#nav-bar{
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+}
+.nav-iten{
+    margin: auto;
+    padding: 20x;
+}
+
+/* style if it is a nav-item and a link with the a tag */
+.nav-item a{
+    color: rgb(41, 41, 41);
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+}
+
+/* responsive design to opttimize viewing for mobile and desktop */
+@media (orientation:portrait)
+    {#content (
+        width: 90%;
+    )
+    }
