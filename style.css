@@ -1,24 +1,68 @@
 
-/* style the nav bar to appear in a row at the top of page */
+/* style the nav bar to appear in a spaced out row at the top of page */
 #nav-bar{
     width: 100%; 
     display: flex;
     flex-direction: row;
 }
-.nav-iten{
+.nav-item{
     margin: auto;
-    padding: 20x;
 }
 
 /* style if it is a nav-item and a link with the a tag */
 .nav-item a{
-    color: rgb(41, 41, 41);
-    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    color: rgba(0, 0, 0, 0.606);
+    font-family: Be Vietnam Pro, serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.9em;
 }
 
+.active{
+  margin: auto;
+}
+
+.active a{
+  color: black;
+  font-family: Be Vietnam Pro, serif;
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 0.9em;
+  }
+
 /* responsive design to opttimize viewing for mobile and desktop */
-@media (orientation:portrait)
-    {#content (
-        width: 90%;
-    )
+@media (orientation: portrait){
+    #content {
+        width: 100%;
+        line-height: 1.5em;
+}
+    #nav-bar {
+        flex-direction: column;
     }
+    }
+
+/* adjusting the spacing of body to fit the screen in the  center */
+#content {
+    width: 70%;
+    margin: auto;
+  }
+
+/* styling the text and body */
+  body {
+    background-color: #f5f5f5;
+  }
+
+  p {
+    line-height: 1.2em;
+    padding-bottom:10px;
+    font-size: 1.2em;
+  }
+
+/* aligning the text for the home page*/
+#home-text {
+  text-align: center;
+  padding-top: 200px;
+}
+
