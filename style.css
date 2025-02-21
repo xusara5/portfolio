@@ -70,7 +70,7 @@
   p {
     line-height: 1.2em;
     padding-bottom:10px;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: Source Serif 4, serif; 
   }
 
@@ -92,8 +92,8 @@
 
   .image{
     margin: auto;
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
     padding-right: 50px;
   }
 
