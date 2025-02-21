@@ -1,30 +1,40 @@
 <!-- linking to the CSS style sheet -->
 <head>
-    <link href="style.css" type="text/css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Gowun+Dodum&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
   </head>
 
   <!-- beginning the body of the page which is what viewers can see -->
   <body>
-    <!-- creating divs for the navigation bar -->
+    <!-- creating divs for the navigation bar, using "active" class to distinguish the nav item representing the current page-->
     <div id = "nav-bar"> 
       <div class = "active"><a href = "index.html"> HOME </a></div>
 
-      <div class = "nav-item"><a href = "index.html"> INTERACTIVE</a></div>
+      <div class = "nav-item"><a href = "index.html"> INTERACTIVE STORY</a></div>
 
-      <div class = "nav-item"><a href = "index.html"> OTHER WORK </a></div>
+      <div class = "nav-item"><a href = "ciips.html"> OTHER WORK </a></div>
     
     </div>
     <!-- creating div for content/text on the page -->
-    <div id = "content">
-      
-      <div id = "home-text">
-      <h1>Sara Xu </h1>
+    <div class = "content">
+    
+ <!-- creating a div for picture and the text -->
+     <h1>Sara Xu</h1>
+    <div id = "img-text-container">
+        
+        <img class = "image" src = "profile.jpg" alt = "Picture of Sara Xu">
 
-      <p>Welcome to my porfolio. </p>
+      <!-- creating a more specific div for the home page text -->
+     
+      <div id = "text-container">
+     
+      <p> As a journalism student, I have always been drawn to storytelling. I love the process of building connections with my sources and piecing together information to create a compelling story that draws readers in. Applying this passion for marketing, I hope to bring consumers closer to a brand and solve business problems. </p>
+
+      <p> In my interactive news journalism class, I've been practicing technical and analytical skills that are key to developing data-driven, dynamic storytelling experiences that engage audiences. Check out my interactive journalism work in this webpage I built using HTML and CSS. </p>
       </div>
+    </div>
 
     </div>
   </body>
