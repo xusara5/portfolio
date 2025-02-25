@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     padding: 0.5em 0em;
-    border-bottom: .015em solid #333333;
+    border-bottom: .015em solid #333333; /* creating a line under the nav bar */
 }
 
 .nav-item{
@@ -69,7 +69,7 @@
     }
   }
 
-/* adjusting the spacing of body to fit the screen in the  center */
+/* adjusting the spacing of body to fit the screen in the center */
 .content {
     width: 80%;
     margin: auto;
@@ -101,11 +101,11 @@
     flex-direction: row;
     width: 100%;
     padding-top: 30px;
+    padding-bottom: 200px;
   }
 
   #text-container{
     margin: auto;
-
   }
 
   .image{
@@ -120,7 +120,7 @@
   #preview-bar {
     display: flex;
     flex-direction: row;
-    gap: 40px 20px; /* column gap 40px, row gap 20px*/
+    gap: 40px; 
     justify-content: center;  
     padding-top: 40px;
   }
@@ -139,7 +139,7 @@
   .preview {
     background-color: white;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);/* adding shadow around the previews*/
     padding: 10px;
     margin: auto;
     border-radius: 5px;
