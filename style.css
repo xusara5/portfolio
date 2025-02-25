@@ -44,6 +44,7 @@
     }
     #nav-bar {
         flex-direction: column;
+        
     }
 
     h1{
@@ -52,8 +53,21 @@
 
     #img-text-container {
       flex-direction: column;
+      width: 100%;
+      align-items: center;
     }
+    .image {
+      width: 80%;  /* Adjust image width for portrait */
+      height: auto;
+      padding-right: 0;
+      margin-bottom: 20px;  /* Adds space between image and text */
     }
+  
+    #text-container {
+      width: 90%;
+      padding-right: 0;
+    }
+  }
 
 /* adjusting the spacing of body to fit the screen in the  center */
 .content {
@@ -81,21 +95,63 @@
     text-align: center;
   }
 
-/* styling the image and text to sit side-by-side using an surrounding container div */
+/* styling the image and text on home page to sit side-by-side using a surrounding container div */
   #img-text-container {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    position: absolute;
+    width: 100%;
     padding-top: 30px;
+  }
+
+  #text-container{
+    margin: auto;
+
   }
 
   .image{
     margin: auto;
-    width: 35%;
-    height: 35%;
+    width: 50%;
+    height: 50%;
     padding-right: 50px;
   }
+
+
+/* having link-image previews sit side-by-side using a surrounding container div */
+  #preview-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 40px 20px; /* column gap 40px, row gap 20px*/
+    justify-content: center;  
+    padding-top: 40px;
+  }
+  
+  .link {
+    background-color: white;
+    color: rgb(4, 4, 4);
+    padding: 10px 20px; /* top and bottom padding 10px, left and righht padding 20px*/
+    border-radius: 5px;
+    display: inline-block;
+    font-family: Encode Sans, serif;
+    position: relative;
+    font-weight: 550;
+  }
+  
+  .preview {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center; 
+  }
+  
+  .preview img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 1px;
+  }
+  
 
 
 
