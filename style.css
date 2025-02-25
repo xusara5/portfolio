@@ -36,38 +36,7 @@
   font-size: 0.9em;
   }
 
-/* responsive design to opttimize viewing for mobile and desktop */
-@media (orientation: portrait){
-    #content {
-        width: 100%;
-        line-height: 1.5em;
-    }
-    #nav-bar {
-        flex-direction: column;
-        
-    }
 
-    h1{
-        padding-top: 10px;
-    }
-
-    #img-text-container {
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
-    .image {
-      width: 80%;  /* Adjust image width for portrait */
-      height: auto;
-      padding-right: 0;
-      margin-bottom: 20px;  /* Adds space between image and text */
-    }
-  
-    #text-container {
-      width: 90%;
-      padding-right: 0;
-    }
-  }
 
 /* adjusting the spacing of body to fit the screen in the center */
 .content {
@@ -151,6 +120,40 @@
     max-width: 100%;
     border-radius: 1px;
   }
+
+  /* responsive design to opttimize viewing for mobile and desktop */
+@media (orientation: portrait){
+  #content {
+      width: 100%;
+      line-height: 1.5em;
+  }
+  #nav-bar {
+      flex-direction: column;
+  }
+
+  h1{
+      padding-top: 10px;
+  }
+
+  #img-text-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .image {
+    width: 70%;  /* Adjust image width for portrait */
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 20px; 
+
+  #text-container {
+    width: 90%; /* Adjust width of text box for portrait */
+  }
+
+  #preview-bar {
+    flex-direction: column;
+  }
+}
   
 
 
