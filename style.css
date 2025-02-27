@@ -93,6 +93,62 @@
     line-height: 1em;
   }
 
+/* styling the videos*/
+.video-container {
+  width: 100%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+}
+
+  .dropdown {
+    text-align: left;
+    padding-top: 15px;
+    width:80%;
+    margin: auto;
+}
+
+/* hiding the checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* styling the button */
+label {
+    width: 100%;
+    padding: 5px;
+    background-color: #486c93;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500px;
+    text-align: center;
+    font-family: Encode Sans, serif;
+}
+
+/* styling the hidden text */
+.dropdown-content {
+    max-height: 0px; /* hiding the tex */
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* creating a smooth animation */
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    padding-bottom: 10px; 
+}
+
+/* showing text when checkbox is checked */
+input[type="checkbox"]:checked + label + .dropdown-content {
+    max-height: 1000px;
+    padding: 5px;
+}
+
 /* styling the text and body of clips page*/
 #clips-page h1 {
   font-family: Source Serif 4, serif;
@@ -146,12 +202,28 @@
       width: 100%;
       line-height: 1.5em;
   }
+  #home-page p{
+    font-size: 1.5em;
+  }
+ 
+  #clips-page p{
+    font-size: 1.5em;
+  }
+
+  #story-page p{
+    font-size: 1.5em;
+  }
+  
   #nav-bar {
       flex-direction: column;
   }
 
-  h1{
-      padding-top: 10px;
+  .nav-item{
+    font-size: 1.3em;
+}
+
+  .active{
+    font-size: 1.3em
   }
 
   #img-text-container {
@@ -164,7 +236,7 @@
     height: auto;
     padding-right: 0;
     margin-bottom: 20px; 
-
+  }
   #text-container {
     width: 90%; /* Adjust width of text box for portrait */
   }

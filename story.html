@@ -16,24 +16,58 @@
   
         <div class = "nav-item"><a href = "clips.html"> OTHER WORK </a></div>
       </div>
+
       <!-- creating div for content/text on the page -->
       <div class = "content">
       
         <div id = "story-page"> 
-       <h1>The loneliness epidemic might not be as novel as we think.</h1>
+       <h1>The loneliness epidemic might not be as new as we think.</h1>
        
-        <p> As a journalism student, I have always been drawn to storytelling. I love the process of building connections with my sources and piecing together information to create a compelling story that draws readers in. Applying this passion for marketing, I hope to bring consumers closer to a brand and solve business problems. </p>
+        <p> When first year clinical psychology graduate student Nina Kougan started graduate school at Northwestern, she noticed that she connects with her friends and family less often despite being based in Chicago.</p>
   
-        <p> In my interactive news journalism class, I've been practicing technical and analytical skills that are key to developing data-driven, dynamic storytelling experiences that engage audiences. </p>
+        <p> "Social relationships can be the first to go...," Kougan said.  </p>
   
-        <p>Check out my interactive journalism work in this webpage I built using HTML and CSS.</p>
+        <p> A weakening of social relationships can often contribute to feelings of loneliness, which the U.S. surgeon general declared a national issue in spring 2023 in a <a href ="https://www.hhs.gov/surgeongeneral/reports-and-publications/connection/index.html">report</a> titled “Our Epidemic of Loneliness and Isolation." </p>
+        
+      </div>
+    </div>
+
+    
+      <!-- embedding video #1-->
+     <div class = "video-container">
+      <video class="video" autoplay loop muted>
+        <source src="dining-vid.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class = "content"> 
+    <div id = "story-page"> 
+     <p> Kougan, who is studying neuroscience behind affect in adolescents, defined loneliness as..   </p>
+
+      <!-- embedding the data visualization-->
 
         <div class="flourish-embed flourish-chart" data-src="visualisation/21813023"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21813023/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
         
-        <div id = "method">
-        To create the data visualiation, I used the CDC's dataset on Lack of Social Connections.
+      
+      
+    </div>
         </div>
-        </div>
-
+        
+        <div class = "video-container">
+          <video class="video" autoplay loop muted>
+            <source src="library_vid.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
       </div>
+      
+  <!-- creating div for a dropdown that hides the methodology section unless clicked -->
+      <div class="dropdown">
+        <input type="checkbox" id="toggle">
+        <label for="toggle">See methodology</label>
+        <div class="dropdown-content">
+            <p> To create the data visualization, I used the CDC's <a href = "https://data.cdc.gov/NCHS/Lack-of-Social-Connection/mnaa-qctp/about_data" > dataset</a> on Lack of Social Connections. Using Google Sheets, I filtered the "Indicator" column to just show respondents who marked that they "usually or always feel lonely," as well as the "Group" column to filter out other demographics like sex, education level or state to just show age group. I copied this filtered data into a separate sheet and created a pivot table to reorganize and extract certain variables. I put the collection period start dates in rows, the sub age groups in columns and the corresponding percentage of respondents in values. I uploaded this pivot table into Flourish to create the multiple line chart, separated by age group. </p>
+        </div>
+    </div>
+
       </body>
