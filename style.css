@@ -219,15 +219,15 @@ input[type="checkbox"]:checked + label + .dropdown-content {
       line-height: 1.5em;
   }
   #home-page p{
-    font-size: 1.5em;
+    font-size: 2em;
   }
  
   #clips-page p{
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   #story-page p{
-    font-size: 1.5em;
+    font-size: 2em;
   }
   
   #nav-bar {
@@ -235,15 +235,15 @@ input[type="checkbox"]:checked + label + .dropdown-content {
   }
 
   .nav-item{
-    font-size: 1.3em;
+    font-size: 2em;
 }
 
   .active{
-    font-size: 1.3em
+    font-size: 2em
   }
 
   .dropdown-content {
-    font-size: 1.3em
+    font-size: 1.8em
 }
 
   #img-text-container {
